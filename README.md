@@ -1,6 +1,11 @@
 # RAWG.io API Fetch Project
 
-This project is a front-end application built with React, Vite, styled with Tailwind CSS, and uses Axios for HTTP requests. The application fetches data of genre list and trending games from the RAWG.io API and displays them in a user-friendly desktop interface. It is not responsive yet.
+This project is a front-end application built with React, Vite, styled with Tailwind CSS, and uses Axios for HTTP requests. The application fetches data of genre list and trending games from the RAWG.io API and displays them in a user-friendly desktop interface. This project does not focus on front-end.
+
+## Functions
+- When selecting the Genre, the heading of popular game will be change. For example, if you select Strategy, the heading will be changed to Strategy Popular Games
+- The Trending games display the first three games
+- The hero section displays the first game
 
 # Installation
 
@@ -25,7 +30,7 @@ The local address should be: http://localhost:5173/
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Axios**: A promise-based HTTP client for making API requests.
 - **RAWG.io API**: Fetches game data from the RAWG.io API and displays it in a structured format.
-- **Responsive Design**: The application is not fully responsive yet.
+- **Responsive Design**: The application does not focus on responsiveness.
 
 # Dependencies
 - React

@@ -15,6 +15,9 @@ To run the application locally, use the following command:
 
 npm run dev  
 
+The local address should be: http://localhost:5173/  
+
+
 # Features
 
 - **React**: A JavaScript library for building user interfaces.

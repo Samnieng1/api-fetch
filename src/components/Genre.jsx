@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ApiMovie from "../api/Api";
 
-function Genre() {
+//the selectedGenre prop is to display the Header based on what Genre users select
+function Genre({genreId, selectedGenre}) {
   //to display the genre list to the UI we need to store in variable
   const [genre, setGenre] = useState([])
   // to set background active when selecting each genre..to store active index
@@ -26,7 +27,9 @@ function Genre() {
         {/* iterate the list of genre */}
         {/**the onclick function is to change the hover not to stay with the first clicked genre when changing to click other genre */}
         {genre.map((item,index)=>(
-            <div onClick={()=>setActiveIndex(index)}
+            <div onClick={()=>{setActiveIndex(index); 
+              genreId(item.id)
+            selectedGenre(item.name)}}
             className={`flex gap-2 items-center
             hover:bg-slate-100 p-2 group 
             ${activeIndex==index?'bg-gray-200':null}`}>
